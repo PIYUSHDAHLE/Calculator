@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <!-- Bootstrap CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      body.dark-mode {
+        background-color: #0c0c0c;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <br />
+    <br />
+    <div class="container">
+      <h4 class="text-center text-uppercase">JavaScript Calculator</h4>
+      <div class="row mt-5">
+        <div class="col">
+          <label class="text-uppercase" for="num1">Number 1</label>
+          <input
+            type="number"
+            class="form-control"
+            id="num1"
+            onchange="clearAnswer()" />
+        </div>
+
+        <div class="col">
+          <label class="text-uppercase" for="operator">Operator</label>
+          <select class="form-control" id="operator" onchange="clearAnswer()">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label class="text-uppercase" for="num2">Number 2</label>
+          <input
+            type="number"
+            class="form-control"
+            id="num2"
+            onchange="clearAnswer()" />
+        </div>
+
+        <button
+          type="submit"
+          class="container text-uppercase btn btn-secondary mt-3"
+          onclick="calculateAnswer()">
+          Submit
+        </button>
+
+        <div class="text-center mx-auto mt-3">
+          <label class="text-uppercase" for="answer">Answer</label>
+          <input
+            type="text"
+            class="form-control text-center"
+            id="answer"
+            readonly />
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <input
+        value="Dark Mode"
+        type="button"
+        class="box text-uppercase btn btn-secondary mt-3"
+        onclick="toggleDarkMode()" />
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS link -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

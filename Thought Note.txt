@@ -1,0 +1,9 @@
+Hello, I'm Piyush Dahle and i was create the calculator using html, bootstrap and javascript according to the requirement of assignment.
+
+basically i'm created two files named as 'index' file and 'script' file. Index file is a html file and Script file is a javascript file.
+
+This is only one web page assignment where i'm created the calculator where user input there two numbers and choose the operator from the dropdown option and click on the submit button and then user get the answer into the answer box. This page is responsive for all type of screen.
+
+In the javascript part I'm using the two function. First function used for to get the user input number and selected operator. Second function is used to provide the answer. Here, I'm used the switch case for the operator.
+
+Extra :- I'm create a toggle Dark Mode button which dark the theme.
